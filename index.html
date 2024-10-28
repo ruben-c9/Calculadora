@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="./index.js" defer></script> <!-- Enlaza el archivo JavaScript, que se cargará después de que el HTML esté completamente cargado -->
+    <link rel="stylesheet" href="./style.css"> <!-- Enlaza el archivo CSS para estilos -->
+</head>
+<body>
+    <!-- Titulo -->
+    <h1>Calculadora Basica <br> HTML CCS JS</h1>
+    <!-- Contenedor principal -->
+    <div class="contenedor">
+        <!-- Contenedor calculadora -->
+        <div class="calculadora">
+            <!-- Pantalla para mostrar resultados -->
+            <div class="pantalla" id="pantalla">0</div>
+            <!-- Botones -->
+            <button class="button" id="reset" aria-label="resetear">AC</button>
+            <button class="button" id="borrar" aria-label="borrar">←</button>
+            <button class="button" id="dividir" aria-label="dividir">/</button>
+            <button class="button" id="multiplicar" aria-label="multiplicar">*</button>
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button" id="sumar" aria-label="sumar">+</button>
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button" id="restar" aria-label="restar">-</button>
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button" id="igual" aria-label="igual">=</button>
+            <button class="button" id="cero">0</button>
+            <button class="button">.</button>
+        </div>
+        <!-- Historial de operaciones -->
+        <div id="historial" class="historial">
+            <H1>Historial</H1>
+        </div>
+    </div>
+</body>
+</html>
