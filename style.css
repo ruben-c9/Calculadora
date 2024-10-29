@@ -16,6 +16,7 @@ body{
 .contenedor{
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 /* Estilos para el contenedor de la calculadora */
 .calculadora{
@@ -33,31 +34,32 @@ body{
 /* Estilos para la pantalla de la calculadora */
 .pantalla{
     grid-column: 1 / -1;
-    background-color: orange;
+    background-color: violet;
     padding: 1.5rem;
     font-size: 2rem;
     text-align: right;
     border-radius: 1rem;
     margin-bottom: 1rem;
     font-weight: 600;
-    box-shadow: 0px 0px 0px 10px rgba(255, 166, 0, 0.534);
+    box-shadow: 0px 0px 0px 10px rgba(52, 50, 56, 0.534);
     white-space: nowrap;
     overflow: hidden;
 }
 /* Estilos para los botones */
 .button{
-    background-color: orange;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
     cursor: pointer;
+    font-size: medium;
 }
 /* Efecto al pasar el cursor sobre los botones */
 .button:hover {
-    background-color: #ff7f00; /* Cambia el color al pasar el cursor */
+    background-color: violet; /* Cambia el color al pasar el cursor */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
 }
 /* Estilos específicos para el botón de operación */
@@ -86,17 +88,15 @@ body{
 }
 /* Estilos para el historial de operaciones */
 .historial {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    margin-top: 1rem;
-    background-color: orange;
+    background-color: violet;
     color: black;
     padding: 1rem;
     border-radius: 1rem;
-    max-height: 200px;
+    height: 100px;
+    width: 350px;
     overflow-y: auto; /* Permite el desplazamiento si hay muchas operaciones */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
 }
 /* Estilos para el titulo */
 .historial h1 {
